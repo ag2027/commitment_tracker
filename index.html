@@ -4,28 +4,29 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>To-Do Listr</h1>
-    <button class="arrow">&lt;</button>
-    <button class="arrow">&gt;</button>
-    <table>
-      <tr>
-        <th>Task Name</th>
-        <th>Due Date</th>
-        <th>Time Commitment
-        <input type="text">
-        </th>
-      </tr>
-      <tr>
-        <td>
-          
-        </td>
-        <td>
-          
-        </td>
-        <td>
-          
-        </td>
-      </tr>
+    <h1>To-Do List</h1>
+    <h3 id="date">Date: </h3>
+    <div>
+    <button class="arrow" id="left_arrow">&lt; Previous Day</button>
+
+    <table id="table">
+
+      <thead>
+        <tr>
+          <th>Task Name</th>
+          <th>Due Date</th>
+          <th>Hours Left
+          </th>
+          <th>Log Hours</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        
+      </tbody>
     </table>
+    <button class="arrow" id="right_arrow">Next Day &gt;</button>
+    </div>
+    <button id="add" onclick="addRow();">+</button>
   </body>
 </html>
